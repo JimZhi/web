@@ -1,0 +1,1 @@
+(self.webpackChunk_02_webpack5=self.webpackChunk_02_webpack5||[]).push([[34],{479:function(){var e=document.createElement("h1");e.textContent="Category Page",document.body.append(e)}}]);

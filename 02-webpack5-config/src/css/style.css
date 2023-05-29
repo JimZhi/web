@@ -1,0 +1,12 @@
+body {
+  background-color: skyblue;
+}
+
+button {
+  color: red;
+}
+
+.title {
+  color: #fff;
+  font-size: 48px;
+}

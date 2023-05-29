@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_02_webpack5=self.webpackChunk_02_webpack5||[]).push([[443],{54:function(e,t,n){n.r(t),n.d(t,{about:function(){return c}});var u=document.createElement("h1");function c(){}u.textContent="About Page",document.body.append(u);t.default="ABOUT"}}]);

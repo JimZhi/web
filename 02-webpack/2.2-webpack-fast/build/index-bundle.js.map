@@ -1,1 +1,0 @@
-{"version":3,"file":"index-bundle.js","mappings":";;;;;;;;;;AAAyB;AAEzBC,OAAO,CAACC,GAAG,CAAC,cAAc,CAAC","sources":["webpack://2.1-source-map/./src/index.js"],"sourcesContent":["import axios from 'axios'\r\n\r\nconsole.log('多入口909090909')"],"names":["axios","console","log"],"sourceRoot":""}
