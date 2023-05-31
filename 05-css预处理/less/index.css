@@ -1,0 +1,17 @@
+.box {
+  width: 160px;
+  height: 100px;
+}
+.wrap {
+  width: 160px;
+  height: 100px;
+  background-color: #f5f876;
+}
+.wrap .item {
+  font-size: 24px;
+}
+.wrap .title {
+  width: 300px;
+  border-top: 5px solid #f5f876;
+  border-bottom: 5px solid #f5f876;
+}

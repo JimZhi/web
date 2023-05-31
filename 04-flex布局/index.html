@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /*
+      flex-flow flex-direction flex-wrap justify-content align-items align-content
+      flex-grow flex-basic flex-shrink order align-self flex
+    */
+    .wrap {
+      display: flex;
+      width: 500px;
+      height: 500px;
+      background-color: #ff4500;
+
+      /* flex-direction: column; */
+      flex-wrap: wrap; /* 默认值不换行 */
+
+      /* justify-content: space-around; */
+      align-items: center;
+    }
+    .item {
+      width: 200px;
+      /* flex-basis: 200px; */
+      /* height: 50px; */
+    }
+    .item1 {
+      background-color: #0ff;
+      /* height: 80px; */
+    }
+    .item2 {
+      background-color: #f0f;
+      height: 150px;
+      align-self: flex-end; /* 跳出align-items的设置， 设置单个某个元素的cors的方向 */
+
+      /* flex-grow: 1; */ /* 默认值为0 不成长 拉伸 在主轴有剩余才会生效， 把剩余部分均分 */
+      flex-shrink: 1; /* 默认值为1 压缩 超过了主轴， 进行压缩设置 */
+    }
+    .item3 {
+      background-color: #ff0;
+      /* height: 120px; */
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="item1 item">1</div>
+      <div class="item2 item">
+        coderhub13rqeqrcoderhub13rqeqrcoderhub13rqeqrcoderhub13rqeqrcoderhub13rqeqr
+      </div>
+      <div class="item3 item">3</div>
+      <div class="item1 item">4</div>
+      <div class="item3 item">5</div>
+    </div>
+  </body>
+</html>

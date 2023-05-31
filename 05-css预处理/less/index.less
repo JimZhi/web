@@ -1,0 +1,32 @@
+// 定义变量
+@mainColor: #f5f876;
+@mainSize: 24px;
+
+// 混入
+.mixin-border(@borderWidth: 1px) {
+  border-top: @borderWidth solid @mainColor;
+  border-bottom: @borderWidth solid @mainColor;
+}
+
+// 混入 + 映射
+.box {
+  width: 160px;
+  height: 100px;
+}
+
+// 嵌套
+.wrap {
+  width: .box() [width]; // 映射
+  height: 100px;
+  background-color: @mainColor;
+
+  .item {
+    font-size: @mainSize;
+  }
+  // 运算
+  .title {
+    width: 200px + 100px;
+    // 混入调用
+    .mixin-border(5px);
+  }
+}
