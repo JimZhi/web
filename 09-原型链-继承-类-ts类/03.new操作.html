@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /*
+      1. 创建一个空对象
+      2. this指向该空对象
+      3. 将构造函数的显示原型赋值给 该空对象的隐式原型
+      4. 执行函数体
+      5. 返回新对象
+      // 我们可以把公共方法定义到显示原型上
+    */
+    function Person(age) {
+      this.age = age;
+    }
+    Person.prototype.running = function () {
+      console.log("running");
+    };
+    const p = new Person(18);
+    console.log(p.running());
+
+    Person.prototype.constructor === Person;
+  </script>
+</html>

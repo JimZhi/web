@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="item" data-name="1">1</div>
+    <div class="item" data-name="2">2</div>
+    <div class="item" data-name="3">3</div>
+  </body>
+  <script>
+    onload = function () {
+      const btns = document.querySelectorAll(".item");
+      // 创建一个频道
+      const channel = new BroadcastChannel("music");
+      for (const btn of btns) {
+        btn.onclick = (e) => {
+          // console.log(e.target.dataset.name);
+          // window.open(`./music.html?name=${e.target.dataset.name}`);
+          channel.postMessage({
+            musicName: e.target.dataset.name,
+          });
+        };
+      }
+    };
+  </script>
+</html>
